@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="./app/layout.css" rel="stylesheet">
+        
+    <link href="./app/styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="../index.html">tExchange</a>
+                    </div>
+                    <!--<ul class="nav navbar-nav">
+                      <li class="active"><a href="../index.html">Home</a></li>
+                    </ul>-->
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a ng-click="register()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <!--<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                    </ul>
+                  </div>
+                </nav>
+        </header>
+        
+        <section>
+              <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Login</h1><br>
+                  <form ng-submit="submit()">
+                    <input type="text" name="user" ng-model="username">
+                    <input type="password" name="pass" ng-model="password">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                  </form>					
+                  <div class="login-help">
+                    <a ng-click="register()">Register</a>
+                    <a href="password_recover.html">Forgot Password?</a>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+             <p>Senior Project</p>
+        </footer>
+    </body>
+</html>
