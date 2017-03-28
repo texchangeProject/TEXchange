@@ -1,0 +1,85 @@
+body {
+  padding-top: 50px;
+    background-color: #D3D3D3;
+    height: 100%;
+    width:100%;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar-fixed-top{
+    border-bottom: #FF5733 5px solid;
+    background-color: #FFFFFF;
+}
+
+.navbar li a{
+   color: black;
+}
+
+.navbar >li> a{
+   color: black;
+
+}
+
+a.button:hover{
+  color: #FF5733;
+  border-bottom-color: #FF5733;
+}
+
+.navbar-form .form-control{
+    background-color: rgba(244,244,244,0);
+}
+
+.glyphicon{
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Cover page styles
+-------------------------------------------------- */
+.h1, h1{
+    color: #000000;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.lead{
+    font-size: 30px;
+    color: #000000;
+}
+
+.btn-lg{
+  padding: 10px 20px ;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin:5px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  border-top: #FF5733 5px solid;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,60 @@
+<md-dialog>
+    <form name="bookAddForm" ng-submit="submit()">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+				<h2>Add new book</h2>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="width:500px;height:500px; ">
+
+            <div layout="row">
+                
+                    <label>Isbn</label>
+                    
+                    <p>: <span ng-bind="book.isbn"></span></p>
+                        
+			 
+            </div>
+
+            <div layout="row">
+                
+                    <label>Title</label>
+                    
+                    <p>: <span ng-bind="book.title"></span></p>
+                        
+			   	
+            </div>
+            
+            <div layout="row">
+	                <md-select placeholder="Type" ng-model="book.book_state" required>
+			        	<md-option ng-repeat="item in info_types" value="{{ item }}">{{ item }}</md-option>
+			        </md-select>
+            </div>
+            
+            <div layout="row">
+                <md-input-container flex>
+                    <label>Physical book condition</label>
+                    <input ng-model="book.condition" required>
+			   	</md-input-container>
+            </div>
+            
+
+            <div layout="row">
+                <md-input-container flex>
+                    <label>Price</label>
+                    <input type="number" step=".01" ng-model="book.price" required>
+			   	</md-input-container>
+            </div>
+
+        </md-dialog-content>
+
+        <div class="md-actions" layout="row">
+            <md-button type="submit" ng-disabled="bookAddForm.$invalid">
+                Save
+            </md-button>
+            <md-button type="button" ng-click="cancel()" style="margin-right:20px;">
+                Cancel
+            </md-button>
+        </div>
+    </form>
+</md-dialog>

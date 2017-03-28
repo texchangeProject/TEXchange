@@ -1,0 +1,22 @@
+/*NavBar Styles*/
+header{
+    border-bottom: 1px solid black;
+}
+
+/*Body Styles*/
+html, body{
+    height: 100%;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+/*Footer Styles*/
+footer{
+    border-top:  1px solid black;
+    text-align: center;
+    padding-bottom: 70px;
+    bottom: 0px;
+    height: 80px;
+}
